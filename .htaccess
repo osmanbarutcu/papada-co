@@ -1,0 +1,76 @@
+<IfModule mod_headers.c>
+     Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+<IfModule mod_headers.c> 
+     Header set X-Frame-Options "sameorigin"
+</IfModule>
+
+RewriteEngine On
+DirectoryIndex index.php
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*img.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*&{.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+Deny from env=block_bad_bots
+RewriteEngine On
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+ErrorDocument 500 /500.php
+RewriteCond %{THE_REQUEST} /([^.]+).php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?page=$1 [QSA,NC,L]
+RewriteRule ^([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ index.php?page=$1&id=$2 [NC,L]
+Options -Indexes
+<files dosyalar>
+Order allow,deny
+Deny from all
+</files>
+<files assets>
+Order allow,deny
+Deny from all
+</files>
+<files app>
+Order allow,deny
+Deny from all
+</files>
+<files custom>
+Order allow,deny
+Deny from all
+</files>
+<files class>
+Order allow,deny
+Deny from all
+</files>
+<files ldap>
+Order allow,deny
+Deny from all
+</files>
+<files modal>
+Order allow,deny
+Deny from all
+</files>
+<files mail>
+Order allow,deny
+Deny from all
+</files>
+<files system>
+Order allow,deny
+Deny from all
+</files>
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+
+
+
