@@ -248,3 +248,7 @@
         margin-right: 10px;
         /* Her resim arasına 10 piksel sağ boşluk ekler */
     }
+
+    .card {
+        border-radius: 20px !important;
+    }

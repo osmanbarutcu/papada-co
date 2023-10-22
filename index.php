@@ -24,10 +24,11 @@
           exit();
         }
       } else {
-        header("HTTP/1.1 404 Not Found");
+        require_once('app/View/anasayfa.php');
         exit();
       }
       ?>
+
       <!-- end slider section -->
     </div>
 
@@ -36,4 +37,3 @@
   <?php require_once('custom/footer.php') ?>
 
   </html>
-
