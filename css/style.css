@@ -13,7 +13,7 @@ body {
 }
 
 .layout_padding2-top {
-  padding-top: 45px;
+  padding-top: 50px;
 }
 
 .layout_padding2-bottom {
@@ -1091,5 +1091,23 @@ a:focus {
 
     .price_btn:hover {
         background-color: #333;
+    }
+    .zoom {
+        position: relative;
+        width: auto;
+        height: 30vmin;
+        cursor: zoom-in;
+    }
+
+    .zoom-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        display: block;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0.2s ease;
     }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
  <style>
-    
+
  </style>
- <section class="about_section layout_padding2-top layout_padding-bottom">
+ <section class="about_section layout_padding2-top">
      <div class="container">
          <div class="row">
              <div class="col-md-6">
@@ -24,7 +24,7 @@
                          <li><strong>Müşteri Memnuniyeti:</strong> Müşterilerimizin memnuniyeti, işimizin kalbidir. Size özel hizmet sunmak, beklentilerinizi aşmak için buradayız.</li>
                          <li><strong>Özel Tasarım:</strong> Size özel tasarlanmış bir takı istiyorsanız, doğru yerdesiniz. İstekleriniz doğrultusunda hayalinizdeki parçayı yaratmak için buradayız.</li>
                      </ul>
-                     Hayalinizdeki takıyı bulmak, özel anlarınızı daha da değerli kılmak ve tarzınızı en iyi şekilde yansıtmak için buradayız. 
+                     Hayalinizdeki takıyı bulmak, özel anlarınızı daha da değerli kılmak ve tarzınızı en iyi şekilde yansıtmak için buradayız.
                      </p>
                  </div>
              </div>
