@@ -7,7 +7,7 @@
                           <a href="">
                               <img src="images/logo.png" alt="">
                               <span>
-                                  Lodge
+                                  PAPADA CO
                               </span>
                           </a>
                       </div>

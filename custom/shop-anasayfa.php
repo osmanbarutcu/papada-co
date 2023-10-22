@@ -1,7 +1,7 @@
 <section class="price_section layout_padding">
     <div class="container">
         <div class="heading_container">
-            <h2>Takılarımız</h2>
+            <h2>Öne Çıkan Takılarımız</h2>
         </div>
         <div class="price_container">
             <div class="box">

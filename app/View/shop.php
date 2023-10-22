@@ -8,7 +8,7 @@
                 <div class="product_info">
                     <h3 class="product_name">Diamond Ring</h3>
                     <div class="product_image zoom">
-                        <img src="https://www.altinsepeti.com/img_urun/altin-zumrut-yesili-tasli-anturaj-takim-AS8TK7tk-14621777321.jpg" class="zoom-image" alt="Diamond Ring">
+                        <img src="<?= urlAna() ?>/takilar/1.png" class="zoom-image" alt="Diamond Ring">
                     </div>
                     <div class="product_details">
                         <h4 class="product_price">$<span>1000.00</span></h4>

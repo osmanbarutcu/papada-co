@@ -24,7 +24,7 @@
                               <a class="nav-link" href="shop">Ürünler</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="iletisim">İletişim</a>
+                              <a class="nav-link" href="contact">İletişim</a>
                           </li>
                       </ul>
                   </div>

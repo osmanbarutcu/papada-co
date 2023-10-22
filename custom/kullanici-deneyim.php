@@ -2,12 +2,9 @@
      <div class="container">
          <div class="heading_container">
              <h2>
-                 Testimonial
+                 Sizlerden Gelenler
              </h2>
          </div>
-         <h4 class="secondary_heading">
-             What is says our customer
-         </h4>
          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
              <div class="carousel-inner">
                  <div class="carousel-item active">
